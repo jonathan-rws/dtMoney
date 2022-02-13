@@ -5,6 +5,7 @@ import { GlobalStyle } from "./styles/global";
 
 import { NewTansactionModal } from "./components/NewTransactionModal";
 import { TransactionsProvider } from "./hooks/useTransactions";
+import { Footer } from "./components/Footer";
 
 export function App() {
 
@@ -29,6 +30,7 @@ function closeNewTransactionModal(){
           onRequestClose={closeNewTransactionModal}
         />
         <Dashboard/>
+        <Footer/>
       </TransactionsProvider>
       
   
