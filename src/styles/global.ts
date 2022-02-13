@@ -47,4 +47,38 @@ button{
     opacity: 0.6;
     cursor: not-allowed;
 }
+
+.react-modal-content{
+    width: 100%;
+    max-width: 36rem;
+    position: relative;
+    background-color: var(--background);
+    padding: 4rem 3rem;
+    border-radius: 0.25rem;
+}
+.react-modal-overlay{
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button.close-modal{
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        border: none;
+        background-color: transparent;
+        transition: filter 0.3s;
+        & :hover{
+            filter: brightness(0.8);
+        }
+    }
+
 `
+
